@@ -1,7 +1,7 @@
 # Budget Tracker
 
 ## Description:
-Do you want to be able to record your workout data and track your progress from anywhere? Then look no further. The Fitness Tracker App is deployed live on Heroku and can be accessed from computers and mobile devices. Users can view, create, and track daily workouts. They are also be able to track the name, type, weight, sets, reps, and duration of exercise. Distance is tracked for cardio exercises as well.
+Budget tracker gives users a fast and easy way to track their money. This app has both online and offline functionality, allowing users to download it onto their phone/device and store their data safely offline until they are able to reconnect to the internet. 
 
 ## Table of Contents
 
