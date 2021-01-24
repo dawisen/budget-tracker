@@ -1,0 +1,39 @@
+{
+  "name": "budget-tracker",
+  "version": "1.0.0",
+  "description": "Budget tracker gives users a fast and easy way to track their money. This app has both online and offline functionality, allowing users to download it onto their phone/device and store their data safely offline until they are able to reconnect to the internet.",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "npm run build && node server.js",
+    "start:dev": "concurrently \"npm run server\" \"cd client && npm run start\"",
+    "server": "nodemon server.js --ignore public",
+    "build": "cd public && npm run build",
+    "install": "cd public && npm install",
+    "client": "cd public && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawisen/budget-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dawisen/budget-tracker/issues"
+  },
+  "homepage": "https://github.com/dawisen/budget-tracker#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "concurrently": "^5.3.0",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.11.13",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  },
+  "browser":{
+  "child_process": false
+  } 
+}
