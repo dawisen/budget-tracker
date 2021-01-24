@@ -1,5 +1,7 @@
 # Budget Tracker
 
+<img src="budget-tracker-example.png">
+
 ## Description:
 Budget tracker gives users a fast and easy way to track their money. This app has both online and offline functionality, allowing users to download it onto their phone/device and store their data safely offline until they are able to reconnect to the internet. 
 
